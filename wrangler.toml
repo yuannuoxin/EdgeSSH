@@ -4,10 +4,6 @@ compatibility_date = "2026-07-01"
 workers_dev = true
 preview_urls = false
 
-routes = [
-  { pattern = "ssh.dltwcnm.ccwu.cc", custom_domain = true }
-]
-
 [build]
 command = "npm run build:web"
 
