@@ -34,5 +34,5 @@ export async function readJSON(request: Request, maxBytes = 160 * 1024): Promise
 }
 
 export function apiFailure(error: unknown): Response {
-  return error instanceof APIError ? jsonError(error.message, error.status) : jsonError('服务暂时不可用，请稍后重试。', 500);
+  return error instanceof APIError ? jsonError(error.message, error.status) : jsonError('服务暂时不可用，请稍后重试。'+error, 500);
 }
